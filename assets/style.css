@@ -1,0 +1,141 @@
+
+
+.content {
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    
+}
+h1,p{
+    text-shadow: white;
+    font-size: larger;
+}
+
+#video2 {
+    background-color: black;
+
+}
+#myVideo {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+#test {
+  
+}
+ul{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+* {
+    /* box-sizing: border-box; */
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#myVideo {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: black;
+}
+
+.content {
+    z-index: 1234;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#navlink {
+    margin-left:auto;
+    margin-right: auto;
+    width: auto;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#apps {
+    z-index: 123;
+}
+
+#appcont { 
+    z-index: 33456;
+    background-color: black;
+    color: white;
+    float: left;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.row { 
+    z-index: +2222;
+}
+#myVideo {
+    position: relative;
+    z-index: -2;
+}
+.center {
+    z-index: 2;
+    position: fixed;
+    background-image: url(photos/gum.jpg);
+  
+
+}
+
+.appdiv {
+    background-color: black;
+    color: white;
+    
+}   
+#myVideo {
+ right: 0; 
+  bottom: 0;
+    min-width: 100%;
+     min-height: 100%;
+    width: auto;  
+    height: auto; 
+    z-index: -100;
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    background-color: black;
+    background-image: url();
+    background-image: url(photos/gum.jpg);
+    align-content: center;
+    text-align: center;
+   }
+h3{
+    text-align: center;
+}
+
+#appholder {
+    
+}
+
+#myVideo {
+    color: white;
+    z-index: 12345;
+}
