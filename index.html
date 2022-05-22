@@ -16,32 +16,88 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
-<body>
-    <nav id="thisone" class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <ul class="navbar-nav ml-auto" id="navlink">
-            <a class="nav-link" href="https://www.instagram.com/corey_alston_sweetgrassbasket/">instagram</a>
-            <a class="nav-link" href="https://www.linkedin.com/in/kyle-talbott-18aba91ba/">Linkedin</a>
-            <a class="nav-link" href="attachments/Kyle_Talbott_Resume.pdf">Resume</a>
-        </ul>
-    </nav>
-    <div class="content" id="myVideo">
-        <h1>Corey Alston </h1>
-        <h1>Sweetgrass Baskets</h1>
-        <hr />
+<nav id="thisone" class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav ml-auto" id="navlink">
+        <a class="nav-link" href="https://www.instagram.com/corey_alston_sweetgrassbasket/">instagram</a>
+        <a class="nav-link" href="https://www.linkedin.com/in/kyle-talbott-18aba91ba/">Linkedin</a>
+        <a class="nav-link" href="attachments/Kyle_Talbott_Resume.pdf">Resume</a>
+    </ul>
+</nav>
+<div class="content" id="myVideo">
+    <h1>Corey Alston </h1>
+    <h1>Sweetgrass Baskets</h1>
+    <hr />
+</div>
 
+
+
+
+
+<body>
+
+    <h2 style="text-align:center">Multiple Slideshows</h2>
+
+    <p>Slideshow 1:</p>
+    <div class="slideshow-container">
+        <div class="mySlides1">
+            <img src="/photos/IMG_8261.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="/photos/IMG_8178.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="/photos/IMG_8261.JPG" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
     </div>
-    <video autoplay muted loop id="myVideo" style="width: 50%; height: 50%;">
-        <source src="./videos/background1 - HD 1080p.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <ul class="navbar-nav ml-auto" id="navlink">
-            <a class="nav-link" href="https://www.facebook.com/groups/766954256700191">PTCF Page</a>
-            <a class="nav-link" href="https://www.kqps.net/">KQPS Homepage</a>
-            <a class="nav-link" href="http://www.cteresource.org/curriculum/technology-education/index.html">Verso
-                Vdoe</a>
-        </ul>
-    </nav>
-</body>
+
+    <p>Slideshow 2:</p>
+    <div class="slideshow-container">
+        <div class="mySlides2">
+            <img src="/photos/IMG_8175.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="/photos/IMG_8178.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="/photos/IMG_8234.JPG" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+    </div>
+
+    <script>
+        let slideIndex = [1, 1];
+        let slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+            let i;
+            let x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {
+                slideIndex[no] = 1
+            }
+            if (n < 1) {
+                slideIndex[no] = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script>
+
 
 </html>
